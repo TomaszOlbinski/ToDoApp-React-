@@ -1,0 +1,19 @@
+.content__active__task,
+.content__done__task {
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.content__active__p,
+.content__done__p {
+  margin: 0;
+  align-self: center;
+  text-align: left;
+}
+
+.content__done__p {
+  flex-basis: 90%;
+}
+
+.content_active_btnwrap {
+}

@@ -1,0 +1,51 @@
+.app {
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  position: relative;
+  background: #fff;
+  color: white;
+  height: 40vh;
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    -225deg,
+    #22e1ff 0%,
+    #1d8fe1 48%,
+    #625eb1 100%
+  );
+  border-radius: 0% 0% 50% 50% / 0% 0% 100% 100%;
+  transform: scalex(1.5);
+}
+.main__content {
+  position: relative;
+  width: 30vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.main__title {
+  flex-basis: 100%;
+  font-size: 3.5rem;
+  margin: 0 0 10px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.9);
+}

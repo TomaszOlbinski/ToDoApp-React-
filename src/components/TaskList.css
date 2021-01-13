@@ -1,0 +1,22 @@
+.content {
+  margin-top: 25px;
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content__active,
+.content__done {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.content__active__task,
+.content__done__task {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+}

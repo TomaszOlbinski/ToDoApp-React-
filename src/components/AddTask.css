@@ -1,0 +1,96 @@
+input {
+  margin: 10px;
+  padding: 5px 10px;
+  font-size: 1.1rem;
+}
+
+.main__form {
+  padding: 20px 12px;
+  height: 25vh;
+  flex-basis: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: -1px 4px 20px 0px rgba(0, 0, 0, 0.35);
+}
+.form__wrap1,
+.form__wrap2 {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__wrap2 {
+  justify-content: flex-start;
+}
+
+.main__form__text {
+  flex-basis: 65%;
+}
+
+.main__form__checkbox {
+  flex-basis: 40px;
+  align-self: center;
+  position: relative;
+  margin: 0 10px 0 20px;
+  height: 20px;
+  appearance: none;
+  background: #c6c6c6;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.main__form__checkbox:checked {
+  background: #03a9f4;
+}
+
+.main__form__checkbox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.main__form__checkbox:checked::before {
+  left: 20px;
+}
+
+.main__form__chblabel {
+  font-size: 1.3rem;
+  margin-top: 5px;
+  flex-basis: 15%;
+}
+
+.main__form__datecontent {
+  margin-right: 50px;
+  text-align: left;
+  flex-basis: 65%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.main__form__datelabel {
+  margin-left: 5px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  flex-basis: 100%;
+  margin-right: 15px;
+}
+
+.main__form__date {
+  flex-basis: 100%;
+}
+.form__main__btn {
+  align-self: flex-end;
+}
